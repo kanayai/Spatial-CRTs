@@ -15,7 +15,7 @@ orthCV2<-function(ref.mat,A=1,reduce=TRUE,lambda=0){
   # orthogonal complement
   Proj<-diag(n)-H
   r<-n-r # rank of orthogonal complement
-  #### option to reduce dimensio or not
+  #### option to reduce dimension or not
   if (reduce){
     Moran.op <-Proj%*%A%*%Proj
   }else{
